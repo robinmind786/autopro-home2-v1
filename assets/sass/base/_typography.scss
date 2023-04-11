@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+a {
+    transition: all .4s!important;
+    text-decoration: none;
+    color: inherit;
+}
+
+body h2 {
+    font-family: Montserrat;
+    line-height: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #111111;
+    font-size: 3.6rem;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+}
+
+body h3 {
+    font-family: Montserrat;
+    line-height: 2.4rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #191d30;
+    font-size: 3rem;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+}
+
+body h4 {
+    font-family: Montserrat;
+    line-height: 2.4rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #111111;
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+}
+
+body h5 {
+    font-family: Montserrat;
+    line-height: 1.9rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #111111;
+    font-size: 1.6rem;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    margin-bottom: 2.5rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h4, 
+h5, 
+h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+.tooltip {
+    position: fixed;
+    z-index: 99999;
+    padding: .4rem 1rem;
+    border: .1rem solid #b3c9ce;
+    text-align: center;
+    font: italic 1rem/1.2 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, .3);
+    transition: all 2s;
+}

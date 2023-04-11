@@ -1,0 +1,55 @@
+.product {
+    padding-top: 5.3rem;
+    padding-bottom: 5.3rem;
+    background-color: #f4f8fa;
+
+    &__content {
+        padding-top: 1rem;
+    }
+
+    &__inner {
+        overflow: hidden;
+        border: 1px solid transparent;
+        position: relative;
+        transition: all .3s;
+        background-color: $color-white;
+
+        &:hover {
+            border: 1px solid $color-primary;
+        }
+    }
+
+    &__img {
+        transition: .3s ease-in-out;
+    }
+
+
+    &__inner:hover &__img {
+        transform: scale(.8)!important;
+    }
+
+    &__inner:hover .tb-title {
+        color: $color-primary;
+    }
+}
+
+.best__seller {
+    padding-top: 5.3rem;
+    padding-bottom: 2.5rem;
+    background-color: $color-white;
+}
+
+
+.product__item--sm {
+    .product__inner {
+        border: solid 1px #ddd;
+
+        &:hover {
+            border: solid 1px $color-primary;
+        }
+    }
+
+    .tb-image {
+        padding-top: 5rem;
+    }
+}

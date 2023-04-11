@@ -1,0 +1,111 @@
+.offers {
+    padding-top: 5.2rem!important;
+    // padding-bottom: 5.2rem !important;
+    // background-color: #f4f8fa !important;
+    background-color: #fff !important;
+
+    &__inner {
+    	width: 100%;
+    	position: relative;
+    }
+
+    &__controller {
+        position: relative;
+        margin-bottom: 1.8rem;
+    }
+
+    &__dots {
+        width: 100%;
+        text-align: center;
+        transition: all .3s ease;
+        display: flex;
+        flex-wrap: wrap;
+
+    	&--item {
+    		width: 16.66666666666667%;
+    		opacity: .3;
+
+    		@include respond(xl-phone) {
+    			width: 33.33333333333333%;
+    		}
+
+    		&.active {
+    			opacity: 1;
+    		}
+    	}
+    }
+
+    &__changer {
+        @include respond(xl-phone) {
+        	display: none;
+        }
+
+    	&--btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            background-color: #999c9d;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-white;
+            text-align: center;
+            transition: all .3s;
+
+            &:hover {
+            	background-color: $color-primary;
+            }
+
+            &:nth-child(1) {
+            	left: -2rem;
+
+            	@include respond(tab-port) {
+            		left: 0;
+            	}
+            }
+
+            &:nth-child(2) {
+            	right: -2rem;
+            	@include respond(tab-port) {
+            		right: 0;
+            	}
+            }
+    	}
+    }
+
+    &__slides {
+    	margin-top: 3rem;
+    	position: relative;
+
+    	&--item {
+	    	&:not(:first-child) {
+	    		display: none;
+	    	}
+    	}
+    }
+
+    &__info {
+    	@include respond(xxl-phone) {
+    		padding: 0 2rem;
+    	}
+    }
+
+    &__responsive {
+    	display: none;
+        @include respond(xl-phone) {
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+
+        	button {
+        		position: relative;
+        		margin: 0 1rem;
+        	}
+        }
+    }
+}

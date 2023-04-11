@@ -1,0 +1,31 @@
+.section {
+	&__header {
+		font-size: 1.6rem;
+		color: #2a2a2a;
+		line-height: 2.4rem;
+		position: relative;
+		margin-bottom: 3rem!important;
+
+		p {
+			font-family: Montserrat;
+			margin-bottom: 2rem!important;
+			font-size: 1.4rem;
+			color: #666666;
+			text-transform: uppercase;
+		}
+
+		h3 {
+			font-family: Montserrat;
+			font-weight: 700!important;
+			line-height: 3.6rem;
+			color: #111111;
+			font-size: 3.6rem;
+			text-transform: uppercase;
+
+			@include respond(tab-port) {
+				font-size: 3rem;
+				line-height: 4rem;
+			}
+		}
+	}
+}

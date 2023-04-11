@@ -1,0 +1,246 @@
+.footer {
+	background-color: #111b29;
+	width: 100%;
+
+	&__top {
+		padding: 5.5rem 0 11.4rem;
+	}
+
+	&__center {
+		padding: 4rem 0 4rem;
+	}
+
+	&__bottom {
+		padding: 2.8rem 0 1.4rem;
+		background-color: #172539;
+
+		@include respond(tab-port) {
+			padding: 3rem 2rem;
+		}
+
+		.left {
+			@include respond(tab-port) {
+				text-align: center;
+			}
+		}
+
+		.right {
+			text-align: right;
+			@include respond(tab-port) {
+				text-align: center;
+			}
+		}
+	}
+}
+
+// ////////////////////////
+// News Letter
+.newsletter {
+	padding: .8rem 0;
+	margin: 0 auto;
+	width: 80%;
+	border-bottom-left-radius: 20rem;
+	border-bottom-right-radius: 20rem;
+	text-align: center;
+	background-color: $color-primary;
+
+	@include respond(xl-tab-land) {
+		width: 100%;
+	}
+
+	@include respond(tab-port) {
+		width: 100%;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	&__title {
+		margin-bottom: 0;
+		font-size: 1.4rem;
+		color: #FFF;
+		font-weight: 700;
+		font-family: Roboto;
+		text-transform: uppercase;
+		display: inline-block;
+		border-right: .1rem solid #fff;
+		width: 29%;
+		margin-top: 0;
+
+		@include respond(tab-port) {
+			display: none;
+		}
+	}
+
+	&__form {
+		width: 61%;
+		display: inline-block;
+
+		@include respond(tab-port) {
+			width: 100%;
+		}
+
+
+		input[type=email] {
+			width: 50rem;
+			color: #fff;
+			font-size: 1.2rem;
+			background-color: $color-primary;
+			border: none;
+
+			@include respond(tab-port) {
+				width: 80%;
+			}
+
+			&::placeholder {
+				color: #fff;
+			}
+		}
+
+		button {
+			color: #fff;
+			i {
+				color: #FFF;
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+// ////////////////////////
+// Footer Img
+.footer-img {
+	position: relative;
+	width: 76%;
+	margin: 0 auto;
+	text-align: center;
+
+	&::before {
+	    position: absolute;
+	    width: 100%;
+	    height: .1rem;
+	    background-color: #070c13;
+	    bottom: -7rem;
+	    left: 0;
+	    content: "";
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			margin: 1rem 3rem;
+
+			i {
+				font-size: 5rem;
+				color: #93abcd;
+				transition: all .3s;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}
+
+// ///////////////////////
+// Footer Link
+.footer__link {
+	.wg-title {
+		font-size: 1.4rem;
+		color: #fff;
+		font-weight: 700;
+		margin-bottom: .7rem;
+		text-transform: uppercase;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin-bottom: .6rem;
+
+			a {
+				color: #93abcd;
+				font-size: 1.4rem;
+
+				i {
+					font-size: 1rem;
+					margin-right: .9rem;
+				}
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}
+// //////////////////////
+// Desiner
+.desinger {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include respond(tab-port) {
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+	p {
+		margin: 0;
+		padding: 0;
+		font-size: 1.4rem;
+		margin-top: -1.8rem;
+		color: #93abcd;
+	}
+
+	.footer__logo {
+		margin-top: .3rem;
+		letter-spacing: .1rem;
+		text-align: left;
+		font-size: 2.4rem;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		font-weight: 400;
+		margin-bottom: 2.5rem;
+
+		@include respond(tab-port) {
+			text-align: center;
+		}
+	}
+}
+// //////////////////////
+// Menu footer
+.menu-footer {
+	text-align: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@include respond(tab-port) {
+		text-align: center;
+	}
+
+	.item {
+		margin-left: 1rem;
+		display: inline-block;
+
+		a {
+			font-size: 1.2rem;
+			color: #93abcd;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+}

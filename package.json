@@ -1,0 +1,17 @@
+{
+  "name": "autopro",
+  "version": "1.0.0",
+  "description": "landing page design for auto parts company",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Robin Mind",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "concat": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "postcss-cli": "^4.1.1"
+  }
+}
